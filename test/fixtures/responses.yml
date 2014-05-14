@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  response: false
+  note: MyText
+  food_request: MyString
+
+two:
+  name: MyString
+  response: false
+  note: MyText
+  food_request: MyString
