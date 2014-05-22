@@ -1,0 +1,30 @@
+<%= form_for @response do |f| %>
+<%= f.label :name %>
+<%= f.text_field :name %>
+<br>
+
+<p>Are you coming?</p>
+
+
+<% number_array = [0,1,2,3,4,5,6] %>
+<%= f.label :number %>
+<%= f.select :number, number_array %>
+
+
+
+<%= f.radio_button(:response, true) %>
+
+<%= f.label :response, "Yes!", :value => true %>
+<br>
+
+<%= f.radio_button(:response, false) %>
+
+<%= f.label :response, "Regrettably, unable to attend.", :value => false %>
+
+<br>
+
+<%= f.label :note %>
+<%= f.text_area :note %>
+
+<%= f.submit %>
+<% end %>
